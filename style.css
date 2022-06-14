@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth; 
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -13,35 +14,43 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-.header{
+
+.header {
   background-color: #BDA1D3;
   margin-bottom:15px;
 }
-.nav-list{
+
+.nav-list {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.nav-item{ 
+
+.nav-item { 
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 20px;
 }
-.nav-link{
+
+.nav-link {
   text-decoration: none;
   color:white;
   padding: 13px 15px;
 }
-.nav-link:hover{
+
+.nav-link:hover {
   background-color: #e3beff;
 }
-.main{
+.user-photo{
+  width: 200px;
+}
+.main {
   font-size: 20px;
 }
-.main p{
+.main p {
   margin-bottom: 10px;
-
 }
+
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -52,16 +61,18 @@ body {
   margin-bottom: 20px;
 }
 
-.divider{
+.divider {
   border-top: 8px solid #DADED4;
   border-radius: 5px;
   width: 100%;
   margin-bottom: 10px;
 }
-#summary{
+
+#summary {
   width: 100%;
   text-align: justify;
 }
+
 @media (max-width: 768px) {
   .section {
     width: 100%;
@@ -74,50 +85,68 @@ body {
   align-items: center; 
   margin: 15px;
 }
-.user-photo{
+.user-photo {
   border-radius: 10%;
 }
-.user-description{
+
+.user-description {
   text-align: center;
 }
+
 .section h1,
 .section h2 {
   font-family: "Open Sans", sans-serif;
   color: #3D3341;
   margin-bottom: 10px;
 }
-h1{
+
+h1 {
   font-size: 50px;
 }
-.contacts-item{
+
+.contacts-item {
   list-style: none inside;
   background-position: 0 1px;
   background-repeat: no-repeat;
   padding-left: 35px;
 }
-.contacts-item:first-child{
+
+.contacts-item:first-child {
   background-image: url("assets/location.png");
 }
-.contacts-item:nth-child(2){
+
+.contacts-item:nth-child(2) {
   background-image: url("assets/email.png");
 }
-.contacts-item:nth-child(3){
+
+.contacts-item:nth-child(3) {
   background-image: url("assets/telegram.png");
 }
-.contacts-item:last-child{
+
+.contacts-item:last-child {
   background-image: url("assets/discord.png");
 }
+
 .skill-item,
 .project-item,
-.education-item{
+.education-item {
   list-style: none inside url("assets/circle.png");
 }
-.project-item a{
+
+.project-item a {
   text-decoration: none;
   color:black;
 }
 
-
 .footer {
   background-color: #BDA1D3;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding:15px;
+}
+.logo{
+  width:150px;
 }
