@@ -10,12 +10,12 @@ body {
 }
 .container {
   max-width: 1440px;
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
 }
 .header{
   background-color: #BDA1D3;
-  max-width: 1440px;
+  margin-bottom:15px;
 }
 .nav-list{
   display: flex;
@@ -25,7 +25,7 @@ body {
 .nav-item{ 
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 18px;
+  font-size: 20px;
 }
 .nav-link{
   text-decoration: none;
@@ -35,6 +35,13 @@ body {
 .nav-link:hover{
   background-color: #e3beff;
 }
+.main{
+  font-size: 20px;
+}
+.main p{
+  margin-bottom: 10px;
+
+}
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -42,18 +49,75 @@ body {
 
 .section {
   width: 50%;
+  margin-bottom: 20px;
 }
 
+.divider{
+  border-top: 8px solid #DADED4;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#summary{
+  width: 100%;
+  text-align: justify;
+}
 @media (max-width: 768px) {
   .section {
     width: 100%;
   }
 }
+
+.main-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  margin: 15px;
+}
+.user-photo{
+  border-radius: 10%;
+}
+.user-description{
+  text-align: center;
+}
 .section h1,
 .section h2 {
   font-family: "Open Sans", sans-serif;
   color: #3D3341;
+  margin-bottom: 10px;
 }
+h1{
+  font-size: 50px;
+}
+.contacts-item{
+  list-style: none inside;
+  background-position: 0 1px;
+  background-repeat: no-repeat;
+  padding-left: 35px;
+}
+.contacts-item:first-child{
+  background-image: url("assets/location.png");
+}
+.contacts-item:nth-child(2){
+  background-image: url("assets/email.png");
+}
+.contacts-item:nth-child(3){
+  background-image: url("assets/telegram.png");
+}
+.contacts-item:last-child{
+  background-image: url("assets/discord.png");
+}
+.skill-item,
+.project-item,
+.education-item{
+  list-style: none inside url("assets/circle.png");
+}
+.project-item a{
+  text-decoration: none;
+  color:black;
+}
+
+
 .footer {
   background-color: #BDA1D3;
 }

@@ -48,56 +48,76 @@
     </header>
     <main class="main">
       <div class="container">
-        <section class="section" id="profile">
-          <h1 class="section-title">Adelina Muslikhova</h1>
-          <img src="assets/img/photo.jpg" alt="User photo" width="200px" />
+        <section class="main-info" id="profile">
+          <div class="user-description">
+            <h1 class="section-title">Adelina Muslikhova</h1>
+            <p>Junior front-end developer</p>
+          </div>
+          <img
+            src="assets/img/photo.jpg"
+            alt="User photo"
+            width="200px"
+            class="user-photo"
+          />
         </section>
+        <div class="divider"></div>
+        <section class="section" id="summary">
+          <h2 class="section-title">Summary</h2>
+          <p>
+            I’m 22 years old. I had graduated from university at 2022. My major
+            was Software Engineering. Now I work as Service Desk Specialist in
+            ICL company. My current job give me an oppotunity to improve my
+            social skills and understanding how processes work in IT
+            compampanies. Now I’m interested in Frontend developer profession.
+            Because it combines two fields such as design and programming. I
+            like to know that alrorithms and functions became visible and I can
+            see a result of my work.
+          </p>
+
+          <p>
+            This field is required permanent improvement of skills. I know that
+            it will be nessesary to read, watch and learn a lot of new
+            information consistently.
+          </p>
+
+          <p>
+            As my final work at university I develop a client-server
+            web-application based on MVP pattern with connection to MongoDB. For
+            client side I used HTML/CSS and JS, for server – node.js Also I
+            created a simple desktop applications using Windows Forms and SQL
+            requests to database. I have expirience of using CMS WordPress.
+          </p>
+        </section>
+        <div class="divider"></div>
         <div class="container main-container">
           <section class="section" id="contacts">
             <h2 class="section-title">Contacts</h2>
-            <p>E-mail:muslikhovaadelina@gmail.com</p>
-
-            <p>Phone number: +79586213208</p>
-            <p>Nickname on rs-school server: Adelina(@AdelinaMuslikhova)</p>
+            <ul class="contacts-list">
+              <li class="contacts-item">Kazan,Russia</li>
+              <li class="contacts-item">E-mail:muslikhovaadelina@gmail.com</li>
+              <li class="contacts-item">Telegram: @adelinamuslikhova</li>
+              <li class="contacts-item">Discord: AdelinaMuslikhova</li>
+            </ul>
           </section>
-          <section class="section" id="summary">
-            <h2 class="section-title">Summary</h2>
-            <p>
-              I’m 22 years old. I had graduated from university at 2022. My
-              major was Software Engineering. Now I work as Service Desk
-              Specialist in ICL company. My current job give me an oppotunity to
-              improve my social skills and understanding how processes work in
-              IT compampanies. Now I’m interested in Frontend developer
-              profession. Because it combines two fields such as design and
-              programming. I like to know that alrorithms and functions became
-              visible and I can see a result of my work.
-            </p>
 
-            <p>
-              This field is required permanent improvement of skills. I know
-              that it will be nessesary to read, watch and learn a lot of new
-              information consistently.
-            </p>
-
-            <p>
-              As my final work at university I develop a clent-server
-              web-application based on MVP pattern with connection to MongoDB.
-              For client side I used HTML/CSS and JS, for server – node.js Also
-              I created a simple desktop applications using Windows Forms and
-              SQL requests to database. I have expirience of using CMS
-              WordPress.
-            </p>
-          </section>
           <section class="section" id="skills">
             <h2 class="section-title">Skills</h2>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>WordPress</li>
-              <li>GIT</li>
-              <li>SQL</li>
-              <li>MongoDB</li>
+            <ul class="skills-list">
+              <li class="skill-item">HTML</li>
+              <li class="skill-item">CSS</li>
+              <li class="skill-item">JavaScript</li>
+              <li class="skill-item">WordPress</li>
+              <li class="skill-item">GIT</li>
+              <li class="skill-item">SQL</li>
+              <li class="skill-item">MongoDB</li>
+            </ul>
+          </section>
+          <div class="divider"></div>
+
+          <section class="section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <ul class="projects-list">
+              <li class="project-item"><a href="#">CV</a></li>
             </ul>
           </section>
           <section class="section" id="code">
@@ -105,37 +125,38 @@
             <p>Program to print all prime number from 2 to n.</p>
             <code>
               <pre>
-                  &quot;use strict&quot;;
-                  let n = prompt(&quot;Enter a number:&quot;,&quot;&quot;);
-                  let result=false;
-                  for(let i=2; i&lt;=n;i++){
-                      for(let j=2;j&lt;i;j++){
-                        if(i%j==0) {
-                          result = false;
-                          break;
-                        }
-                        else{
-                          result = true;
-                        }
-                      }
-                      if(result === true){
-                        console.log(i);
-                      }
+              &quot;use strict&quot;;
+              let n = prompt(&quot;Enter a number:&quot;,&quot;&quot;);
+              let result=false;
+              for(let i=2; i&lt;=n;i++){
+                  for(let j=2;j&lt;i;j++){
+                    if(i%j==0) {
+                    result = false;
+                      break;
+                    }
+                    else{
+                      result = true;
+                    }
                   }
+              if(result === true){
+                console.log(i);
+                }
+              }
                </pre
               >
             </code>
           </section>
+          <div class="divider"></div>
           <section class="section" id="education">
             <h2 class="section-title">Education</h2>
-            <ul>
-              <li>
+            <ul class="education-list">
+              <li class="education-item">
                 2019 – 2021 – International Centre (Kazan National Research
                 Technical University named after A.N. Tupolev) Qualification -
                 Translator in professional communication
               </li>
 
-              <li>
+              <li class="education-item">
                 2017 – 2021– Kazan National Research Technical University named
                 after A.N. Tupolev–KAI Specialization- Software Engineering
               </li>
@@ -143,11 +164,7 @@
           </section>
           <section class="section" id="english">
             <h2 class="section-title">English</h2>
-            <p>
-              B2 – Upper Intermediate I had finished “Translator in professional
-              communication” courses. At unversity I had a chance to practise
-              english with teacher from USA.
-            </p>
+            <p>B2 – Upper Intermediate</p>
           </section>
         </div>
       </div>
