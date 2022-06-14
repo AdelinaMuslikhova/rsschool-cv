@@ -10,10 +10,12 @@ body {
 }
 .container {
   max-width: 1440px;
+  width: 1000px;
   margin: 0 auto;
 }
 .header{
   background-color: #BDA1D3;
+  max-width: 1440px;
 }
 .nav-list{
   display: flex;
@@ -33,10 +35,25 @@ body {
 .nav-link:hover{
   background-color: #e3beff;
 }
-.footer {
-    border: 1px solid red;
-    height: 200px;
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
 }
-.main{
-    min-height: 100vh;
+
+.section {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+.section h1,
+.section h2 {
+  font-family: "Open Sans", sans-serif;
+  color: #3D3341;
+}
+.footer {
+  background-color: #BDA1D3;
 }
