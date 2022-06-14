@@ -146,6 +146,11 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding:15px;
+  color:white;
+}
+.footer-container a{
+  text-decoration: none;
+  color:white
 }
 .logo{
   width:150px;
